@@ -40,4 +40,9 @@ diesel::table! {
 diesel::joinable!(subtasks -> tasks (task_id));
 diesel::joinable!(tasks -> projects (project_id));
 
-diesel::allow_tables_to_appear_in_same_query!(projects, subtasks, tasks, thoughts,);
+diesel::allow_tables_to_appear_in_same_query!(
+    projects,
+    subtasks,
+    tasks,
+    thoughts,
+);
