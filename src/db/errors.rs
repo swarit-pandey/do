@@ -41,3 +41,5 @@ impl From<DieselError> for DatabaseError {
         }
     }
 }
+
+impl std::error::Error for DatabaseError {}
